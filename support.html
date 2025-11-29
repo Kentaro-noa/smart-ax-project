@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StockFlow サポート</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 24px;
+            line-height: 1.7;
+            background: #fafafa;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        h2 {
+            font-size: 1.4rem;
+            margin-top: 2rem;
+        }
+        code {
+            background: #eee;
+            padding: 2px 5px;
+            border-radius: 4px;
+        }
+        .section {
+            background: #fff;
+            padding: 18px 20px;
+            border-radius: 10px;
+            margin-bottom: 22px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+        }
+    </style>
+</head>
+<body>
+
+<h1>📘 StockFlow サポートページ</h1>
+
+<p>このページでは、StockFlow の使い方、FAQ、データ保存方法、問い合わせ方法などをご案内します。</p>
+
+<div class="section">
+    <h2>📸 初期設定（カメラ・写真の許可）</h2>
+    <p>
+        StockFlow では、バーコードの読み取りと商品画像の変更に「カメラ」と「写真」へのアクセス権が必要です。<br>
+        初回起動時の案内にて「許可」を選択してください。
+    </p>
+    <p>もし拒否した場合は以下から許可を再設定できます：</p>
+    <ul>
+        <li>iPhone の設定 → StockFlow → カメラ（オン）</li>
+        <li>iPhone の設定 → StockFlow → 写真（読み出しと書き込み）</li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>📦 在庫の追加（スキャン）</h2>
+    <p>
+        1. メイン画面左下の「スキャンして追加」をタップ<br>
+        2. バーコードをカメラ中央に合わせる<br>
+        3. 読み取られると自動でリストに追加されます
+    </p>
+</div>
+
+<div class="section">
+    <h2>✏️ 在庫の編集</h2>
+    <p>
+        リストの鉛筆マークをタップし、名称・必要数・在庫数を編集できます。<br>
+        編集後はチェックマークをタップすると保存します。<br>
+        × マークを押すと編集せずに戻ります。
+    </p>
+</div>
+
+<div class="section">
+    <h2>🖼 商品画像の変更</h2>
+    <p>
+        商品画像をタップするとメニューが表示されます。
+    </p>
+    <ul>
+        <li>カメラで撮影</li>
+        <li>写真から選択</li>
+    </ul>
+    <p>選択した画像はメイン画面に反映されます。</p>
+</div>
+
+<div class="section">
+    <h2>📤 CSV ダウンロード</h2>
+    <p>
+        メイン画面右下の「ダウンロード」をタップすると、リストのデータを CSV 形式で出力できます。
+        共有シートが開き、メール、LINE、AirDrop、ファイル保存などが可能です。
+    </p>
+    <p>出力ファイル名：<code>stock_list.txt</code></p>
+    <p>必要に応じて、任意の名前に変更してください。</p>
+</div>
+
+<div class="section">
+    <h2>❓ よくある質問（FAQ）</h2>
+
+    <p><b>Q. バーコードが読み取れない</b><br>
+    A. 明るい場所で、バーコード全体がカメラ中央に収まるように調整してください。</p>
+
+    <p><b>Q. 画像を変更しても反映されない</b><br>
+    A. 一度アプリを再起動してみてください。</p>
+
+    <p><b>Q. データが消えないか不安です</b><br>
+    A. 端末内に JSON と画像として保存されます。バックアップ方法は以下をご確認ください。</p>
+</div>
+
+<div class="section">
+    <h2>💾 データのバックアップ（上級者向け）</h2>
+
+    <p>StockFlow のデータは端末内に保存されています。</p>
+
+    <ul>
+        <li>在庫データ：<code>stocks.json</code></li>
+        <li>商品画像：UUID.jpg</li>
+    </ul>
+
+    <p>バックアップ手順（Mac / Finder）：</p>
+    <ol>
+        <li>iPhone を Mac に接続</li>
+        <li>Finder を開く</li>
+        <li>サイドバーの「iPhone」→「ファイル」</li>
+        <li>StockFlow を選択し、必要なファイルを取り出す</li>
+    </ol>
+</div>
+
+<div class="section">
+    <h2>📮 お問い合わせ</h2>
+    <p>
+        StockFlow に関する不具合やご質問がある場合は、以下からご連絡ください：<br>
+    </p>
+    <p>
+        <b>お問い合わせ窓口：</b>  
+        <a href="mailto:noaprojects2025@outlook.jp">noaprojects2025@outlook.jp</a>
+    </p>
+</div>
+
+<footer style="margin-top:40px; text-align:center; color:#666; font-size:0.9rem;">
+    © 2025 NoA Projects. All rights reserved.
+</footer>
+
+</body>
+</html>
